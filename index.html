@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2: Meeting Minutes</title>
+    <meta name="author" content="Asaki Billawala">
+    <link rel="icon" href="favicon.ico"> 
+  </head>
+  <body>
+    <header>
+        <h1>Weekly Meeting</h1>
+        <hr>
+        <nav>
+            <a href="#attendence">Attendence</a> |
+            <a href="#agenda">Agenda</a> |
+            <a href="#visuals">Visuals</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="details">
+            <h2>Meeting Topic: Brainstorming</h2>
+            <h3>Date: Tuesday, April 14, 2026</h3>
+        </section>
+
+        <section id="attendence">
+            <h2>Attendence</h2>
+            <ul>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Asaki Billawala</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Brainstorm and submit <strong>Project Proposal</strong></li>
+                <li><em>Set up meeting with TA</em></li>
+                <li>Discuss weekly meeting schedule</li>
+                <li>Create first draft</li>
+            </ol>
+        </section>
+
+        <section id="business">
+            <h2>Unfinished Business</h2>
+            <p>Dealing out and assigning roles and positions. Update weekly goals. Establish <b>timeline</b> before end of the week.</p>
+            <h2>New Business</h2>
+            <p><i>New</i> meeting notes. Please prepare to present <span>github updates</span>.</p>
+
+        </section>
+
+        <section id="miscellaneous">
+            <h2>Questions</h2>
+            <p>Questions that arose in meeting</p>
+            <details>
+                <summary>Click for questions</summary>
+                <p>So manny questions.</p>
+            </details>
+            <h2>Comments</h2>
+            <p>Inquiry into changing meeting time.</p>
+        </section>
+
+        <section id="visuals">
+            <h2>Meeting Visuals</h2>
+
+            <div>
+            <p>Whiteboard diagram</p>
+            <img src="diagram.jpeg" alt="Whiteboard" width="500">
+            </div>
+
+            <div>
+                <h3>Audio Recording</h3>
+                <audio controls>
+                    <source src="meeting-audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div>
+                <h3>Video Recording</h3>
+                <video width="480" controls>
+                    <source src="meeting-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <section id="contact-form">
+      <h2>Meeting Follow-up Form</h2>
+      <form>
+        <fieldset>
+          <legend>User Info</legend>
+          <label for="username">Name:</label>
+          <input type="text" id="username" name="username">
+          <br><br>
+          <label for="meeting-date">Next Meeting Date:</label>
+          <input type="date" id="meeting-date" name="meeting-date">
+        </fieldset>
+    
+        <fieldset>
+          <legend>Attendance Confirmation</legend>
+          <p>Will you attend the next meeting?</p>
+          <input type="radio" id="attending-yes" name="attendance" value="yes">
+          <label for="attending-yes">Yes</label>
+          <input type="radio" id="attending-no" name="attendance" value="no">
+          <label for="attending-no">No</label>
+    
+          <p>Select your roles:</p>
+          <input type="checkbox" id="role-dev" name="role" value="developer">
+          <label for="role-dev">Developer</label>
+          <input type="checkbox" id="role-des" name="role" value="designer">
+          <label for="role-des">Designer</label>
+        </fieldset>
+    
+        <fieldset>
+          <legend>Detailed Feedback</legend>
+          <label for="mood">Meeting Mood:</label>
+          <select id="mood" name="mood">
+            <option value="happy">Happy</option>
+            <option value="productive">Productive</option>
+            <option value="confused">Confused</option>
+          </select>
+          <br><br>
+    
+          <label for="topic">Search Topic:</label>
+          <input list="topics" id="topic" name="topic">
+          <datalist id="topics">
+            <option value="HTML Basics">
+            <option value="DevTools Scavenger Hunt">
+            <option value="GitHub Pages">
+          </datalist>
+          <br><br>
+    
+          <label for="notes">Additional Notes:</label><br>
+          <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+          <br><br>
+    
+          <button type="button">Save Draft</button>
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+        <p>Author: Asaki Billawala
+        <br>
+        <a href="mailto:abillawala@ucsd.edu">abillawala@ucsd.edu</a></p>
+    </footer>
+  </body>
+</html>
